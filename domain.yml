@@ -1,0 +1,315 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Admissions
+  - Programs
+  - Research
+  - Under_Graduate_Program
+  - BS_Food_Science_&_Technology
+  - Graduate_Program
+  - Post_Graduate_Program
+  - Doctoral_Program
+  - MUL_Exclusive_Programs
+  - Associate_Degrees
+  - BS_Computer_Science
+
+
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  #  utter_cheer_up:
+  #  - text: "Here is something to cheer you up:"
+  #    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_help:
+    - text: "How can i help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_admission:
+    - text: "INSTRUCTIONS FOR FILLING ONLINE ADMISSION FORM & PAYMENT PROCESS::- Visit Website  www.admission.mul.edu.pk . For Complete Guide Click Vedio link below-->"
+      attachment: { "Link": "https://youtu.be/P1g8wWn6IMI" }
+  #    attachment: { "type": "",payload": { "src": "https://youtu.be/P1g8wWn6IMI" } }
+
+  #  utter_admission:
+  #    - text: "Guide For You"
+  #    - custom:
+  #      attachment:
+  #        type: "video"
+  #        payload:
+  #          src: "https://youtu.be/P1g8wWn6IMI.mp4"
+  #        autoplay: "true"
+
+  utter_bs_food_science_technology:
+    - text: "Duration: 4 Years\n\nTotal Semester: 8\n\nTotal Package: 565,000 \n\nAt Admission Time: 27,500\n\nAdditional Charges at the time of Admission: 2,700 *\n\nExamination Fee: 2,500\n\nTotal Amount (At Admission): 30,200\n\nInstallment: 33750 * 16\n\nEligibility Criteria:-  12 Years of Education, FSc,, A-Level, DAE or equivalent with minimum 45% marks. For 5th Semester Admission BSc with minimum 40% marks. No Entry test MUL Merit List"
+
+  utter_goodbye:
+    - text: "Its my pleasure, Visit our Campus for Further Information"
+
+  utter_iamabot:
+    - text: "I am a MUL_Assistant_bot, how can i help you!"
+
+
+  utter_programs:
+    - text: "Select Degree/Program you like!"
+      buttons:
+        - title: "Under-Graduate Program"
+          payload: "/Under_Graduate_Program"
+        - title: "Graduate Program"
+          payload: "/Graduate_Program"
+        - title: "Post Graduate Program"
+          payload: "/Post_Graduate_Program"
+  utter_research:
+    - text: "Doctoral / Research / PHD Programs"
+      buttons:
+        - title: "Doctoral Program"
+          payload: "/Doctoral_Program"
+        - title: "MUL Exclusive Programs"
+          payload: "/MUL_Exclusive_Programs"
+        - title: "Associate Degrees"
+          payload: "/Associate_Degrees"
+
+
+  utter_under_graduate_program:
+    - text: "Minhaj University Offers"
+      buttons:
+        - title: "BS Food Science & Technology"
+          payload: "/BS Food Science & Technology"
+        - title: "BS Biochemistry"
+          payload: "/BS Biochemistry"
+        - title: "Associate Degree Program in Computer Science"
+          payload: "/Associate Degree Program in Computer Science"
+  utter_under_graduate_program_1:
+    - text: "More"
+      buttons:
+        - title: "Associate Degree Program in Computer Networking"
+          payload: "/Associate Degree Program in Computer Networking"
+        - title: "Associate Degree Program in Web Design & Development"
+          payload: "/Associate Degree Program in Web Design & Development"
+        - title: "BS Data Sciences"
+          payload: "/BS Data Sciences"
+  utter_under_graduate_program_2:
+    - text: "More"
+      buttons:
+        - title: "BS Artificial Intelligence"
+          payload: "/BS Artificial Intelligence"
+        - title: "BS Cyber Security"
+          payload: "/BS Cyber Security"
+        - title: "BS Game Design and Development"
+          payload: "/BS Game Design and Development"
+  utter_under_graduate_program_3:
+    - text: "More"
+      buttons:
+        - title: "BS Computer Science"
+          payload: "/BS Computer Science"
+        - title: "BS Information Technology"
+          payload: "/BS Information Technology"
+        - title: "BS Software Engineering"
+          payload: "/BS Software Engineering"
+  utter_under_graduate_program_4:
+    - text: "More"
+      buttons:
+        - title: "Associate Degree Program Double Math & Physics"
+          payload: "/Associate Degree Program Double Math & Physics"
+        - title: "BS Mathematics"
+          payload: "/BS Information Technology"
+        - title: "BS Chemistry"
+          payload: "/BS Chemistry"
+  utter_under_graduate_program_5:
+    - text: "More"
+      buttons:
+        - title: "BS Physics"
+          payload: "/BS Physics"
+        - title: "BS Statistics"
+          payload: "/BS Statistics"
+        - title: "BS Botany"
+          payload: "/BS Botany"
+  utter_under_graduate_program_6:
+    - text: "More"
+      buttons:
+        - title: "BS Zoology"
+          payload: "/BS Zoology"
+        - title: "BS Statistics"
+          payload: "/BS Statistics"
+        - title: "Associate Degree Program in Business Administration"
+          payload: "/Associate Degree Program in Business Administration"
+  utter_under_graduate_program_7:
+    - text: "More"
+      buttons:
+        - title: "B.Com (Associate Degree in Commerce)"
+          payload: "/B.Com (Associate Degree in Commerce)"
+        - title: "BS Economics\n\n BS Islamic Banking & Finance"
+          payload: "/BS Economics\n\n BS Islamic Banking & Finance"
+        - title: "BS Accounting and Finance"
+          payload: "/BS Accounting and Finance"
+  utter_under_graduate_program_8:
+    - text: "More"
+      buttons:
+        - title: "BBA"
+          payload: "/BBA)"
+        - title: "B.Com (4 Year)"
+          payload: "/B.Com (4 Year)"
+        - title: "BS Accounting and Finance"
+          payload: "/BS Accounting and Finance"
+  utter_under_graduate_program_9:
+    - text: "More"
+      buttons:
+        - title: "Associate Degree Program in Mass Communication"
+          payload: "/Associate Degree Program in Mass Communication"
+        - title: "BS Political Science"
+          payload: "/BS Political Science"
+        - title: "BS International Relations"
+          payload: "/BS International Relations"
+  utter_under_graduate_program_10:
+    - text: "More"
+      buttons:
+        - title: "Associate Degree Program in Education"
+          payload: "/Associate Degree Program in Education"
+        - title: "BS History"
+          payload: "/BS History"
+        - title: "BS Mass Communication"
+          payload: "/BS Mass Communication"
+  utter_under_graduate_program_11:
+    - text: "More"
+      buttons:
+        - title: "BS Pakistan Studies"
+          payload: "/BS Pakistan Studies"
+        - title: "BS Library & Information Science"
+          payload: "/BS Library & Information Science"
+        - title: "BS Accounting and Finance"
+          payload: "/BS Accounting and Finance"
+  utter_under_graduate_program_12:
+    - text: "More"
+      buttons:
+        - title: "Associate degree in Arts"
+          payload: "/Associate degree in Arts"
+        - title: "BS Political Science"
+          payload: "/BS Political Science"
+        - title: "BS Sociology"
+          payload: "/BS Sociology"
+  utter_under_graduate_program_13:
+    - text: "More"
+      buttons:
+        - title: "BS Education"
+          payload: "/BS Education"
+        - title: "BS Education"
+          payload: "/BS Education"
+        - title: "BS Peace and Conflict Studies"
+          payload: "/BS Peace and Conflict Studies"
+  utter_under_graduate_program_14:
+    - text: "More"
+      buttons:
+        - title: "BS English"
+          payload: "/BS English"
+        - title: "BS Urdu"
+          payload: "/BS Urdu"
+        - title: "BS Islamic Studies"
+          payload: "/BS Islamic Studies"
+  utter_under_graduate_program_15:
+    - text: "More"
+      buttons:
+        - title: "B.Sc. Chemical Engineering"
+          payload: "/B.Sc. Chemical Engineering"
+        - title: "BS Medical Laboratory Technology"
+          payload: "/BS Medical Laboratory Technology"
+        - title: "BS Clinical Nutrition"
+          payload: "/BS Clinical Nutrition"
+  utter_under_graduate_program_16:
+    - text: "More"
+      buttons:
+        - title: "L.L.B"
+          payload: "/L.L.B"
+
+
+
+#  utter_ex:
+#    - text: "Guide For You"
+#      buttons:
+#        - title: "Click"
+#          payload: "https://youtu.be/P1g8wWn6IMI"
+
+
+#templates:
+#  utter_programs:
+#  - text: "Select Degree/Program"
+#    buttons:
+#    - title: "Under-Graduate Program"
+#      payload: "/Under_Graduate_Program"
+#    - title: "Graduate Program"
+#      payload: "/Graduate_Program"
+#    - title: "Post Graduate Program"
+#      payload: "/Post_Graduate_Program"
+#    - title: "Doctoral Program"
+#      payload: "/Doctoral_Program"
+#    - title: "MUL Exclusive Programs"
+#      payload: "/MUL_Exclusive_Programs"
+#    - title: "Associate Degrees"
+#      payload: "/Associate_Degrees"
+#-------------------------------------------
+#  utter_under_graduate_program:
+#  - text: "Select Degree/Program"
+#    buttons:
+#    - title: "BS Computer Science"
+#      payload: "/BS_Computer_Science"
+
+
+
+#---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+actions:
+  - utter_help
+  - utter_greet
+  - utter_goodbye
+  - utter_happy
+  - utter_admission
+  - utter_programs
+  - utter_research
+  - utter_under_graduate_program
+  - utter_under_graduate_program_1
+  - utter_under_graduate_program_2
+  - utter_under_graduate_program_3
+  - utter_under_graduate_program_4
+  - utter_under_graduate_program_5
+  - utter_under_graduate_program_6
+  - utter_under_graduate_program_7
+  - utter_under_graduate_program_8
+  - utter_under_graduate_program_9
+  - utter_under_graduate_program_10
+  - utter_under_graduate_program_11
+  - utter_under_graduate_program_12
+  - utter_under_graduate_program_13
+  - utter_under_graduate_program_14
+  - utter_under_graduate_program_15
+  - utter_under_graduate_program_16
+  - utter_bs_food_science_technology
+  - utter_graduate_program
+  - utter_post_graduate_program
+  - utter_doctoral_program
+  - utter_mul_exclusive_programs
+  - utter_associate_degrees
+  - utter_bs_computer_science

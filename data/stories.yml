@@ -1,0 +1,169 @@
+version: "3.0"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_help
+- story: greet1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_help
+
+- story: goodbye
+  steps:
+  - intent: deny
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_goodbye
+- story: goodbye1
+  steps:
+  - intent: deny
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+- story: happy1
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_happy
+#
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye
+
+- story: admission
+  steps:
+  - intent: Admissions
+  - action: utter_admission
+
+- story: programs
+  steps:
+  - intent: Programs
+  - action: utter_programs
+  - action: utter_research
+- story: programs path 1
+  steps:
+  - intent: Programs
+  - action: utter_programs
+  - action: utter_research
+- story: research
+  steps:
+  - intent: Research
+  - action: utter_programs
+  - action: utter_research
+- story: research path 1
+  steps:
+  - intent: Research
+  - action: utter_programs
+  - action: utter_research
+#-------------------------------
+- story: Under_Graduate_Program
+  steps:
+  - intent: Under_Graduate_Program
+  - action: utter_under_graduate_program
+  - action: utter_under_graduate_program_1
+  - action: utter_under_graduate_program_2
+  - action: utter_under_graduate_program_3
+  - action: utter_under_graduate_program_4
+  - action: utter_under_graduate_program_5
+  - action: utter_under_graduate_program_6
+  - action: utter_under_graduate_program_7
+  - action: utter_under_graduate_program_8
+  - action: utter_under_graduate_program_9
+  - action: utter_under_graduate_program_10
+  - action: utter_under_graduate_program_11
+  - action: utter_under_graduate_program_12
+  - action: utter_under_graduate_program_13
+  - action: utter_under_graduate_program_14
+  - action: utter_under_graduate_program_15
+  - action: utter_under_graduate_program_16
+- story: Under_Graduate_Program path 1
+  steps:
+  - intent: Under_Graduate_Program
+  - action: utter_under_graduate_program
+  - action: utter_under_graduate_program_1
+  - action: utter_under_graduate_program_2
+  - action: utter_under_graduate_program_3
+  - action: utter_under_graduate_program_4
+  - action: utter_under_graduate_program_5
+  - action: utter_under_graduate_program_6
+  - action: utter_under_graduate_program_7
+  - action: utter_under_graduate_program_8
+  - action: utter_under_graduate_program_9
+  - action: utter_under_graduate_program_10
+  - action: utter_under_graduate_program_11
+  - action: utter_under_graduate_program_12
+  - action: utter_under_graduate_program_13
+  - action: utter_under_graduate_program_14
+  - action: utter_under_graduate_program_15
+  - action: utter_under_graduate_program_16
+
+- story: BS Food Science & Technology
+  steps:
+  - intent: BS_Food_Science_&_Technology
+  - action: utter_bs_food_science_technology
+
+
+
+
+
+
+
+
+
+
+- story: Graduate_Program
+  steps:
+  - intent: Graduate_Program
+  - action: utter_graduate_program
+
+- story: Post_Graduate_Program
+  steps:
+  - intent: Post_Graduate_Program
+  - action: utter_post_graduate_program
+
+- story: Doctoral_Program
+  steps:
+  - intent: Doctoral_Program
+  - action: utter_doctoral_program
+
+- story: MUL_Exclusive_Programs
+  steps:
+  - intent: MUL_Exclusive_Programs
+  - action: utter_mul_exclusive_programs
+
+- story: Associate_Degrees
+  steps:
+  - intent: Associate_Degrees
+  - action: utter_associate_degrees
+
+#------------------------------------------------
+
+- story: BS_Computer_Science
+  steps:
+  - intent: BS_Computer_Science
+  - action: utter_bs_computer_science

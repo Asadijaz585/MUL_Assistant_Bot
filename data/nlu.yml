@@ -1,0 +1,172 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - salam
+    - assalam-u-alaikum
+    - aslam u alaikum
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+#- intent: affirm
+#  examples: |
+#    - yes
+#    - y
+#    - indeed
+#    - of course
+#    - that sounds good
+#    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+#
+#- intent: mood_unhappy
+#  examples: |
+#    - my day was horrible
+#    - I am sad
+#    - I don't feel very well
+#    - I am disappointed
+#    - super sad
+#    - I'm so sad
+#    - sad
+#    - very sad
+#    - unhappy
+#    - not good
+#    - not very good
+#    - extremly sad
+#    - so saad
+#    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - who
+    - what is your name?
+
+- intent: Admissions
+  examples: |
+    - Admission
+    - Admissions
+    - How to apply?
+    - Online apply
+    - Process to apply
+    - online process
+    - apply
+
+- intent: Programs
+  examples: |
+    - Programs
+    - what subjects you offer?
+    - what kind of programs you offer?
+    - all degree programs
+    - subjects offered
+    - all subjects
+    - all programs
+    - program types
+    - Doctoral Programs
+    - PHd
+    - what subjects you are offering
+
+- intent: Research
+  examples: |
+    - Research
+    - what subjects you offer?
+    - what kind of programs you offer?
+    - all degree programs
+    - subjects offered
+    - all subjects
+    - all programs
+    - program types
+    - Doctoral Programs
+    - PHd
+    - what subjects you are offering
+
+
+# programs selection
+
+- intent: Under_Graduate_Program
+  examples: |
+    - Under-Graduate Program
+    - Under-Graduate Program details
+- intent: BS_Food_Science_&_Technology
+  examples: |
+    - BS Food Science & Technology
+    - Food Science & Technology
+    - food science
+    - science food
+    - BS Food Science & Technology details
+
+
+- intent: Graduate_Program
+  examples: |
+    - Graduate Program
+    - Graduate Program details
+- intent: Post_Graduate_Program
+  examples: |
+    - Post Graduate Program
+    - Post Graduate Program details
+- intent: Doctoral_Program
+  examples: |
+    - Doctoral Program
+    - Doctoral Program details
+- intent: MUL_Exclusive_Programs
+  examples: |
+    - MUL Exclusive Programs
+    - MUL Exclusive Programs detsils
+- intent: Associate_Degrees
+  examples: |
+    - Associate Degrees
+    - Associate Degrees details
